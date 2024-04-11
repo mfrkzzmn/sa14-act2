@@ -1,0 +1,127 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  font-family: montserrat, arial, verdana;
+  /* background-color: unset; */
+}
+
+/*form styles*/
+#weatherForm {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#weatherForm fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+#weatherForm fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#weatherForm input,
+#weatherForm textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
+/*buttons*/
+.action-button {
+  width: 50px;
+  background: #27ae60;
+  font-weight: bold;
+  color: white !important;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px auto;
+  text-decoration: none;
+  font-size: 14px;
+}
+.action-button:hover,
+.action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+
+.task-button {
+  width: 100px;
+  background: #0407c9;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.task-button:hover,
+.task-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+body {    text-align: center;}
+
+table {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+}
+
+#container {
+  position: relative;
+}
+
+#tasks {
+  position: absolute;
+  margin-top: 100px !important;
+  top: -44px;
+  left: 40%;
+}
+
+#task1 {
+  position: absolute;
+  top: 105px;
+  width: 100%;
+}
+
+#task1Table {
+  width:98%;
+  height:100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#weatherTable {
+  margin: 0 auto; /* or margin: 0 auto 0 auto */
+  width: 100% !important;
+}
+
+
