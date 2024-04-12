@@ -45,7 +45,7 @@ body {
 }
 /*buttons*/
 .action-button {
-  width: 50px;
+  /* width: 50px; */
   background: #27ae60;
   font-weight: bold;
   color: white !important;
@@ -64,9 +64,9 @@ body {
 
 .task-button {
   width: 100px;
-  background: #0407c9;
+  /* background: #0407c9; */
   font-weight: bold;
-  color: white;
+  color: black;
   border: 0 none;
   border-radius: 1px;
   cursor: pointer;
@@ -78,6 +78,7 @@ body {
 .task-button:hover,
 .task-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+  background: #c92804;
 }
 
 table,
@@ -106,7 +107,7 @@ table {
   left: 40%;
 }
 
-#task1 {
+.task {
   position: absolute;
   top: 105px;
   width: 100%;
@@ -125,3 +126,84 @@ table {
 }
 
 
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:focus {background-color: #f1f1f1}
+
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+.dropdown:focus .dropbtn {
+  background-color: #3e8e41;
+}
+
+.currencyDropdown {
+  margin: 60px auto;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+form fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+form fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+form input,
+form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
