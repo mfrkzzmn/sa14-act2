@@ -30,8 +30,7 @@
     <div id="task1" class="task">
       <div id="task1form">
         <form id="weatherForm">
-          <h2 class="fs-title text-bold"></h2>
-          <!-- <h1 class="fs-subtitle">Task 1</h1> -->
+          <!-- <h2 id="form-validation-title">Weather Form</h2> -->
           <input type="text" id="location" name="location" required placeholder="Location" />
           <input type="submit" name="next" class="action-button" value="submit" />
         </form>
@@ -45,26 +44,28 @@
     <div id="task2" class="task">
       <div id="task2form">
         <form id="currencyConverterForm">
-          <div id="sourceCurrency" class="currencyDropdown">
-            <label for="language">source </label>
-            <select name="sourceCurrencyDropdown" id="sourceCurrencyDropdown">
-              <option value="select" selected>----select---</option>
-              <option value="usd">USD</option>
-              <option value="eur">EURO</option>
-              <option value="gbp">GBP</option>
-            </select>
-          </div>
-          <div id="destinationCurrency" class="currencyDropdown">
-            <label for="language">destination </label>
-            <select name="destinationCurrencyDropdown" id="destinationCurrencyDropdown">
-              <option value="select" selected>----select---</option>
-              <option value="USD">USD</option>
-              <option value="EUR">EURO</option>
-              <option value="GBP">GBP</option>
-            </select>
-          </div>
-          <input type="text" id="exchangeAmount" name="exchangeAmount" required placeholder="amount" />
-          <input type="submit" name="next" class="action-button" value="submit" />
+          <div id="currency">
+            <div id="sourceCurrency" class="currencyDropdown">
+              <label for="language">source </label>
+              <select name="sourceCurrencyDropdown" id="sourceCurrencyDropdown">
+                <option value="select" selected>----select---</option>
+                <option value="usd">USD</option>
+                <option value="eur">EURO</option>
+                <option value="gbp">GBP</option>
+              </select>
+            </div>
+            <div id="destinationCurrency" class="currencyDropdown">
+              <label for="language">destination </label>
+              <select name="destinationCurrencyDropdown" id="destinationCurrencyDropdown">
+                <option value="select" selected>----select---</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EURO</option>
+                <option value="GBP">GBP</option>
+              </select>
+            </div>
+        </div>
+        <input type="text" id="exchangeAmount" name="exchangeAmount" required placeholder="amount" />
+        <input type="submit" name="next" class="action-button" value="submit" />
         </form>
       </div>
       <div id="task2Result">
@@ -109,36 +110,14 @@
     </div>
     <div id="task5" class="task">
       <div id="task5form">
-        <form id="currencyConverterForm">
-          <div id="sourceCurrency" class="currencyDropdown">
-            <label for="language">source </label>
-            <select name="sourceCurrencyDropdown" id="sourceCurrencyDropdown">
-              <option value="select" selected>----select---</option>
-              <option value="usd">USD</option>
-              <option value="eur">EURO</option>
-              <option value="gbp">GBP</option>
-            </select>
-          </div>
-          <div id="destinationCurrency" class="currencyDropdown">
-            <label for="language">destination </label>
-            <select name="destinationCurrencyDropdown" id="destinationCurrencyDropdown">
-              <option value="select" selected>----select---</option>
-              <option value="USD">USD</option>
-              <option value="EUR">EURO</option>
-              <option value="GBP">GBP</option>
-            </select>
-          </div>
-          <input type="text" id="exchangeAmount" name="exchangeAmount" required placeholder="amount" />
-          <input type="submit" name="next" class="action-button" value="submit" />
+        <form id="validationForm"></form>
+          <button id="moveButton">Move Image</button>
+          <div id="movableDiv"></div>
         </form>
       </div>
-      <div id="task2Result">
-        <p id="task2ExchangeResult"></p>
-      </div>
-
+      
     </div>
   </div>
 </body>
 <script src="sa14-act2.js"></script>
-
 </html>

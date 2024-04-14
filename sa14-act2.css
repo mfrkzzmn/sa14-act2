@@ -170,7 +170,11 @@ table {
 }
 
 .currencyDropdown {
-  margin: 60px auto;
+  margin: 30px 10px;
+}
+
+#currency {
+  display: inline-flex;
 }
 
 form {
@@ -414,3 +418,29 @@ input {
 .inp-validation {
   margin: 10px;
 }
+
+
+
+
+#movableDiv {
+  width: 400px;
+  height: 250px;
+  background-image: url('sloth.jpeg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire div */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  transition: all 2s ease; /* Smooth transition for any position change */
+}
+
+#task2Result{
+  position: absolute;
+  left: 44%;
+  top: 112%;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+

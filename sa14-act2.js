@@ -138,6 +138,7 @@ $(document).ready(function () {
       type: 'get',
       dataType: 'json',
       success: function (data) {
+        $('#task2ExchangeResult').empty();
         let rates = data.conversion_rates;
         let exchange_rate = rates[destinationCurrency];
         let result = parseFloat(amount) * parseFloat(exchange_rate);
@@ -292,5 +293,26 @@ $(document).ready(function () {
     }
    
   })
+
+
+  //task 5
+
+  var isAtStart = true;
+
+  $("#moveButton").click(function() {
+      if (isAtStart) {
+          // Move the div to the right end of the screen
+          $("#movableDiv").animate({
+              left: $(window).width() - 450 + "px"  // Calculate the end position minus width of the div
+          }, 2000); // 2000 ms = 2 seconds for the animation
+          isAtStart = false; // Update position flag
+      } else {
+          // Move the div back to the starting position
+          $("#movableDiv").animate({
+              left: "50px"
+          }, 2000); // 2000 ms = 2 seconds for the animation
+          isAtStart = true; // Update position flag
+      }
+  });
 
 });
