@@ -23,6 +23,9 @@
     <div id="tasks">
       <input type="button" id="inp_task1" class="task-button" value="Task 1" />
       <input type="button" id="inp_task2" class="task-button" value="Task 2" />
+      <input type="button" id="inp_task3" class="task-button" value="Task 3" />
+      <input type="button" id="inp_task4" class="task-button" value="Task 4" />
+      <input type="button" id="inp_task5" class="task-button" value="Task 5" />
     </div>
     <div id="task1" class="task">
       <div id="task1form">
@@ -69,7 +72,73 @@
       </div>
 
     </div>
+    <div id="task3" class="task">
+      <div id="todoForm" class="header">
+        <!-- <h2 style="margin:5px">My To Do List</h2> -->
+        <input type="text" id="new-task" placeholder="Title...">
+        <span id="add-button" class="addBtn">Save</span>
+      </div>
+
+      <h2 id="todo-list-title">My To Do List</h2>
+      <ul id="todo-tasks">
+      </ul>
+    </div>
+    <div id="task4" class="task">
+      <div id="task4form">
+        <h2 id="form-validation-title">User Registration Form</h2>
+
+        <form id="validationForm">
+          <span id="validationSuccess" class="success"></span>
+          <div class="inp-validation">
+            <span id="usernameError" class="error"></span>
+            <input type="text" id="username" name="username" placeholder="username" />
+          </div>
+          <div class="inp-validation">
+            <span id="emailError" class="error"></span>
+            <input type="text" id="email" name="email" placeholder="email" />
+          </div>
+          <div class="inp-validation">
+            <span id="passwordError" class="error"></span>
+            <input type="text" id="password" name="password" placeholder="password" />
+          </div>
+          <div class="inp-validation">
+            <input type="submit" name="task4submit" class="action-button" value="check" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="task5" class="task">
+      <div id="task5form">
+        <form id="currencyConverterForm">
+          <div id="sourceCurrency" class="currencyDropdown">
+            <label for="language">source </label>
+            <select name="sourceCurrencyDropdown" id="sourceCurrencyDropdown">
+              <option value="select" selected>----select---</option>
+              <option value="usd">USD</option>
+              <option value="eur">EURO</option>
+              <option value="gbp">GBP</option>
+            </select>
+          </div>
+          <div id="destinationCurrency" class="currencyDropdown">
+            <label for="language">destination </label>
+            <select name="destinationCurrencyDropdown" id="destinationCurrencyDropdown">
+              <option value="select" selected>----select---</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EURO</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+          <input type="text" id="exchangeAmount" name="exchangeAmount" required placeholder="amount" />
+          <input type="submit" name="next" class="action-button" value="submit" />
+        </form>
+      </div>
+      <div id="task2Result">
+        <p id="task2ExchangeResult"></p>
+      </div>
+
+    </div>
   </div>
 </body>
 <script src="sa14-act2.js"></script>
+
 </html>
